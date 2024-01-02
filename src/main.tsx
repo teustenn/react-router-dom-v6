@@ -6,6 +6,7 @@ import './styles/global.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { About } from './components/About';
 import { Menu } from './components/Menu';
+import { Contact } from './components/Contact';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -15,7 +16,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
+        <Route path='/contact' element={<Contact />} />
       </Routes>
+
     </BrowserRouter>
   </React.StrictMode>,
 )
